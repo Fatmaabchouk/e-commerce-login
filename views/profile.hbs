@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Lumineuse - Mettez en Valeur la Beauté de votre Peau :</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">
+            LIVRAISON GRATUITE POUR TOUTES LES COMMANDES EN TUNISIE DE 50 DT ET PLUS</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+         <p>Marwa accessoires</p>
+        </a>
+
+        <div class="header-actions">
+
+         
+         
+          
+ <!-- ... Autres parties du code ... -->
+<a class="header-action-btn" aria-label="user" href="#" id="userLink">
+    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+    <label id="welcomeMessageLabel">Login Account</label>
+</a>
+
+<script src="auth.js"></script>
+<script> 
+    // JavaScript pour mettre à jour le contenu de la balise label avec le message
+    document.addEventListener('DOMContentLoaded', function () {
+        // Récupérer le prénom et le nom depuis l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstName = urlParams.get('firstname');
+        const lastName = urlParams.get('lastname');
+         const email = urlParams.get('email');
+        console.log('FirstName:', firstName);
+        console.log('LastName:', lastName);
+   console.log('Email:', email);
+        // Construire le message de bienvenue
+        const welcomeMessage = `Welcome ${firstName} ${lastName || ''}`;
+
+        // Mettre à jour le contenu de la balise label avec le message
+        const welcomeMessageLabel = document.getElementById('welcomeMessageLabel');
+        if (welcomeMessageLabel) {
+            welcomeMessageLabel.textContent = welcomeMessage || "Login Account";
+        }
+
+        // Mettre à jour le contenu de la balise p avec le message de bienvenue
+        const welcomeP = document.querySelector('.account-content.col p');
+        if (welcomeP) {
+            welcomeP.textContent = `Welcome,  ${firstName} ${lastName}`;
+        }
+
+        // Mettre à jour la valeur du champ de texte readonly
+        const nameInput = document.getElementById('firstName');
+        if (nameInput) {
+            nameInput.value = ` ${firstName}`;
+        }
+       // Mettre à jour la valeur du champ de texte readonly
+        const lastnameInput = document.getElementById('lastName');
+        if (lastnameInput) {
+            lastnameInput.value = ` ${lastName}`;
+        }
+          
+   
+    });
+   
+</script>
+
+
+<!-- ... Autres parties du code ... -->
+
+
+
+          
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <data class="btn-text" value="0">0.00 DT</data>
+
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Collection</a>
+            </li>
+
+            <li>
+              <a href="#shop" class="navbar-link has-after">Shop</a>
+            </li>
+
+            <li>
+              <a href="#offer" class="navbar-link has-after">Offer</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link has-after">Blog</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 
+    -  #MOBILE NAVBAR
+  -->
+
+
+
+
+ <div class="sidebare">
+  <p>emmm</p>
+<div class="mobile-navbar" data-navbar>
+
+<div class="wrapper">
+<a href="#" class="logo">
+
+</a>
+<button class="nav-close-btn" aria-label="clase menu" data-nav-toggler >
+<ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+</button>
+</div>
+<ul class="navbar-list">
+<li>
+<a href="#home" class="  navbar-link" data-nav-link>Home</a>
+</li>
+<li>
+    <a href="#collection" class="  navbar-link" data-nav-link>Collection</a>
+    </li>
+    <li>
+        <a href="#shop" class="  navbar-link" data-nav-link>Shop</a>
+        </li>
+        <li>
+            <a href="#offer" class="  navbar-link" data-nav-link>Offer</a>
+            </li>
+        </li>
+        <li>
+            <a href="#blog" class="  navbar-link" data-nav-link>Blog</a>
+            </li>
+
+</ul>
+</div>
+
+<div class="overlay" data-nav-toggler data-overlay></div>
+
+
+ </div>
+<main>
+    <div class="page-container clearfix" id="PageContainer">
+        <main id="MainContent">
+            <link rel="stylesheet" href="/public/profile.css">
+            <div class="main-content shop-page-account">
+                <div class="container">
+                    <div class="container block-page-login" style="margin: 32px 0;">
+                        <div id="primary"></div>
+                        <h1 class="page-title text-center">Account</h1>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-lg-auto col-xs-12 col-sm-4 col-md-lg-3">
+                                <div class="wrapper_tabcontent customer">
+                                    <a href="#" class="active"  >
+                                        <button>
+                                            <i class="fas fa-bars"></i>
+                                            Dashboard
+                                        </button>
+                                    </a>
+
+                                    <a href="/checkout">
+                                        <button>
+                                            <i class="fas fa-check-circle"></i>
+                                            Check Out
+                                        </button>
+                                    </a>
+
+                                    <a href="/addresses">
+                                        <button>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            View Addresses
+                                        </button>
+                                    </a>
+
+                                    <a href="/wishlist">
+                                        <button>
+                                            <i class="fas fa-heart"></i>
+                                            View Wishlist
+                                        </button>
+                                    </a>
+
+                                    <a href="/login">
+                                        <button>
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            Logout
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="account-content col">
+                               <p class="title-customer">
+    "Account" <span>{{firstName}} {{lastName}}</span>
+</p>
+</br> 
+                                <div class="order-history">
+                                <h4>Order History</h4>
+                  <button id="makeOrderButton">
+    <p class="none">
+        <a href="/acc?firstname={{firstName}}&lastname={{lastName}}" onclick="makeOrderClick()">
+            <i class="fas fa-shopping-cart"></i> MAKE YOUR FIRST ORDER
+        </a>
+    </p>
+</button>
+<!-- Inclure Handlebars.js -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const firstName = urlParams.get('firstname');
+    const lastName = urlParams.get('lastname');
+
+    const welcomeMessageLabel = document.getElementById('welcomeMessageLabel');
+    if (welcomeMessageLabel) {
+        welcomeMessageLabel.textContent = `Welcome ${firstName} ${lastName || ''}`;
+    }
+
+    // Autres mises à jour nécessaires sur la page profile.hbs...
+});
+</script>
+
+
+
+<!-- profile.hbs -->
+
+
+You haven't placed any orders yet.</p> </div>
+<div class="account_details"> 
+                            <p>Account Details:</p>
+
+                                <form action="/auth/profile" method="post">
+            <label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName" value="{{firstName}}" readonly>
+
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName" value="{{lastName}}" readonly>
+
+                                    <label for="country">Country:</label>
+                                    <input type="text" id="country" name="country" required>
+
+                  <label for="EEmail">Email:</label>
+                <input type="EEmail" id="EEmail" name="EEmail" required>
+
+                                    <label for="phone">Phone:</label>
+                                    <input type="tel" id="phone" name="phone"  required>
+
+                                    <label for="zip">Zip:</label>
+                                    <input type="text" id="zip" name="zip" required>
+
+                                    <label for="Adress1">Address 1:</label>
+                                    <input type="text" id="Adress1" name="Adress1" required>
+
+                                    <label for="Adress2">Address 2:</label>
+                                    <input type="text" id="Adress2" name="Adress2" required>
+
+                                    <!-- Ajoutez un bouton de soumission si nécessaire -->
+                                    
+                                    <button type="submit">Update Account</button>
+                                <!-- Ajoutez ceci à votre fichier handlebars -->
+{{#if messages.error}}
+    <div class="alert alert-danger">{{messages.error}}</div>
+{{/if}}
+{{#if messages.success}}
+    <div class="alert alert-success">{{messages.success}}</div>
+{{/if}}
+
+                                </form> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</main>
+<!-- ... footer... -->
+
+<div id="shopify-section-footer1" class="shopify-section footer_top">
+
+<footer id="footer" class="alo-background-color" style="--alo-background-color:#141414">
+<section id="laber_footer1">
+  <div class="main-footer">
+    <div class="container">
+      <div class="row">
+
+      </div>
+
+    </div> </div>
+
+
+</section>
+<div class="container">
+  <div class="line alo-background-color" style="--alo-background-color:#2c2f31" ;></div>
+</div>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="cropyright col-lg-6 col-md-12 col-12 alo-color" style="--alo-color:#8f9599;">
+<p>"Developed by" <a href="https://ftamaabchouk-mgwa.onrender.com/cv.html" target="_blank" >Abchouk fatma</a> 
+
+</p>
+
+
+      </div>
+      <div class="payment col-lg-6 col-md-12 col-12">
+        <span class="alo-color" style="--alo-color:#8f9599" > Payment method:</span>
+        <div class="icon">
+         <i class="fab fa-cc-visa" style="color: #1a73e8;"></i>
+
+    <!-- Icon for MasterCard -->
+    <i class="fab fa-cc-mastercard" style="color: #ff6f61;"></i>
+
+    <!-- Icon for PayPal -->
+    <i class="fab fa-cc-paypal" style="color: #003087;"></i>
+
+    <!-- Add more icons for other payment methods as needed -->
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</footer>
+
+
+
+</div> 
+  
+
+
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/scriptt.js" defer></script>
+  <!-- 
+    - ionicon link
+  -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

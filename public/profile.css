@@ -1,0 +1,20 @@
+/* .page-container et .clearfix sont séparés par une virgule */
+.page-container,
+.clearfix {
+    color: blue;
+    clear: both;
+}
+
+/* body* n'est pas une syntaxe CSS valide */
+
+
+.shop-page-account h1.page-title {
+    color: red;
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 30px;
+    line-height: 1;
+    border-bottom: 2px solid #ebebeb;
+    padding-bottom: 15px;}
